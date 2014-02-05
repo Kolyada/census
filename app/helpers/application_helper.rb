@@ -14,7 +14,7 @@ module ApplicationHelper
     end
     ActiveRecord::Base.connection.execute(sql)
     CityAlias.delete_all
-    sql='insert into city_aliases (zip_code_id,"City", "CityAbbreviation") select "ZipCode", "City", "CityAbbreviation" from loaded_data'
+    sql='insert into city_aliases ("zip_code_id","City", "CityAbbreviation") select "ZipCode", "City", "CityAbbreviation" from loaded_data'
     ActiveRecord::Base.connection.execute(sql)
     createStates
     ZipCode.delete_all
@@ -24,6 +24,9 @@ module ApplicationHelper
     colToSelect.sub!(%Q["state_id"],%Q[coalesce((select id from states s where trim(s."StateAbbreviation")=trim(d."StateAbbreviation") limit 1),0)])
     sql = %Q[insert into zip_codes (#{colToInsert}) select distinct #{colToSelect} from loaded_data d]
     ActiveRecord::Base.connection.execute(sql)
+    EasyZip.delete_all
+    sql='insert into easy_zips select "ZipCode","Latitude","Longitude","County", state_id from zip_codes'
+    ActiveRecord::Base.connection.execute(sql)
   end
 
 
@@ -32,8 +35,14 @@ module ApplicationHelper
     State.delete_all
     data = open(file){|f|f.readlines()}
     hash = data.map{|d| d.split("\t").map{|x|x.strip}}
-    hash.each do |s,a|
-      State.create StateFullName:s,StateAbbreviation:a
+    hash.each do |i, s,a|
+      State.create id:i, StateFullName:s,StateAbbreviation:a
     end
+  end
+
+  def createResponse(options=nil)
+    options ||= Hash.new
+    options[:status] ||= 'success'
+    options
   end
 end

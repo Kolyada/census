@@ -1255,73 +1255,80 @@ $default-float: left;
 
 // Background color for the top bar
 
-// $topbar-bg-color: #111;
-// $topbar-bg: $topbar-bg-color;
+// $fragments-bg-color: #111;
+// $fragments-bg: $fragments-bg-color;
 
 // Height and margin
 
-// $topbar-height: 45px;
-// $topbar-margin-bottom: 0;
+// $fragments-height: 45px;
+// $fragments-margin-bottom: 0;
 
 // Control Input height for top bar
 
-// $topbar-input-height: 2.45em;
+// $fragments-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
 
-// $topbar-title-weight: bold;
-// $topbar-title-font-size: em-calc(17);
+// $fragments-title-weight: bold;
+// $fragments-title-font-size: em-calc(17);
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg: #222;
-// $topbar-dropdown-link-color: #fff;
-// // $topbar-dropdown-link-bg: lighten($topbar-bg-color, 5%);
-// $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
-// $topbar-dropdown-toggle-alpha: 0.5;
+// $fragments-dropdown-bg: #222;
+// $fragments-dropdown-link-color: #fff;
+// // $fragments-dropdown-link-bg: lighten($fragments-bg-color, 5%);
+// $fragments-dropdown-toggle-size: 5px;
+// $fragments-dropdown-toggle-color: #fff;
+// $fragments-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: em-calc(13);
-// $topbar-link-hover-lightness: -30%; // Darken by 30%
-// $topbar-link-bg-hover: darken($topbar-bg-color, 3%);
-// $topbar-link-bg-active: darken($topbar-bg-color, 3%);
+// $fragments-link-color: #fff;
+// $fragments-link-color-hover: #fff;
+// $fragments-link-color-active: #fff;
+// $fragments-link-weight: bold;
+// $fragments-link-font-size: em-calc(13);
+// $fragments-link-hover-lightness: -30%; // Darken by 30%
+// $fragments-link-bg-hover: darken($fragments-bg-color, 3%);
+// $fragments-link-bg-active: darken($fragments-bg-color, 3%);
 
-// $topbar-dropdown-label-color: #555;
-// $topbar-dropdown-label-text-transform: uppercase;
-// $topbar-dropdown-label-font-weight: bold;
-// $topbar-dropdown-label-font-size: em-calc(10);
-// $topbar-dropdown-label-bg: lighten($topbar-bg-color, 5%);
+// $fragments-dropdown-label-color: #555;
+// $fragments-dropdown-label-text-transform: uppercase;
+// $fragments-dropdown-label-font-weight: bold;
+// $fragments-dropdown-label-font-size: em-calc(10);
+// $fragments-dropdown-label-bg: lighten($fragments-bg-color, 5%);
 
 // Top menu icon styles
 
-// $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: em-calc(13);
-// $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+// $fragments-menu-link-transform: uppercase;
+// $fragments-menu-link-font-size: em-calc(13);
+// $fragments-menu-link-weight: bold;
+// $fragments-menu-link-color: #fff;
+// $fragments-menu-icon-color: #fff;
+// $fragments-menu-link-color-toggled: #888;
+// $fragments-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
 
-// $topbar-transition-speed: 300ms;
-// $topbar-breakpoint: 940 !default; // Change to 9999px for always mobile layout
-// $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+// $fragments-transition-speed: 300ms;
+// $fragments-breakpoint: 940 !default; // Change to 9999px for always mobile layout
+// $fragments-media-query: "only screen and (min-width: #{$fragments-breakpoint})";
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px lighten($topbar-bg-color, 10%);
-//  $topbar-divider-border-top: solid 1px darken($topbar-bg-color, 10%);
+// $fragments-divider-border-bottom: solid 1px lighten($fragments-bg-color, 10%);
+//  $fragments-divider-border-top: solid 1px darken($fragments-bg-color, 10%);
 
 // Sticky Class
 
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+// $fragments-sticky-class: ".sticky";
+// $fragments-arrows: true; //Set false to remove the triangle icon from the menu item
 
 @import 'foundation';
+
+
+
+.error-alert-box {@include alert($bg: #ce4323);}
+.notice-alert-box {@include alert($bg: #ce9906);}
+.default-alert-box {@include alert($bg: #00bbce);}
+.hide { display: none }

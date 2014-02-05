@@ -11,13 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140130000056) do
+ActiveRecord::Schema.define(version: 20140205002612) do
 
   create_table "city_aliases", force: true do |t|
     t.integer "zip_code_id"
     t.string  "City"
     t.string  "CityAbbreviation"
   end
+
+  add_index "city_aliases", ["City"], name: "index_city_aliases_on_City", using: :btree
+  add_index "city_aliases", ["CityAbbreviation"], name: "index_city_aliases_on_CityAbbreviation", using: :btree
+  add_index "city_aliases", ["zip_code_id"], name: "index_city_aliases_on_zip_code_id", using: :btree
+
+  create_table "easy_zips", primary_key: "ZipCode", force: true do |t|
+    t.float   "Longitude"
+    t.float   "Latitude"
+    t.string  "County"
+    t.integer "state_id"
+  end
+
+  add_index "easy_zips", ["County"], name: "index_easy_zips_on_County", using: :btree
+  add_index "easy_zips", ["Latitude"], name: "index_easy_zips_on_Latitude", using: :btree
+  add_index "easy_zips", ["Longitude"], name: "index_easy_zips_on_Longitude", using: :btree
+  add_index "easy_zips", ["state_id"], name: "index_easy_zips_on_state_id", using: :btree
 
   create_table "loaded_data", force: true do |t|
     t.integer "ZipCode"
@@ -393,5 +409,8 @@ ActiveRecord::Schema.define(version: 20140130000056) do
     t.integer "VacantHousingUnitsForSeasonalOccasionalUse"
     t.integer "VacantHousingUnitsAllOtherVacants"
   end
+
+  add_index "zip_codes", ["Latitude"], name: "index_zip_codes_on_Latitude", using: :btree
+  add_index "zip_codes", ["Longitude"], name: "index_zip_codes_on_Longitude", using: :btree
 
 end

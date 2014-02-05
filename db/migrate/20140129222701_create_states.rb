@@ -1,6 +1,6 @@
 class CreateStates < ActiveRecord::Migration
   def change
-    create_table :states do |t|
+    create_table :states,primary_key: 'id' do |t|
       t.string :StateFullName
       t.string :StateAbbreviation
     end

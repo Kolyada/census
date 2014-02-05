@@ -21,3 +21,13 @@
 
 en:
   hello: "Hello world"
+  errors:
+    noParam: "Required parameter is missing"
+    zeroSize: "Search value is blank"
+    noZip: "No one object was founded by zip"
+    longZip: "ZipCode contains 1..5 digits"
+    tooShort: "Search value is too short"
+    noCity: "No one object was founded by city"
+  messages:
+    tooLong: "Too much data, specify your inquiry"
+

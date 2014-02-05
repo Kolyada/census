@@ -5,7 +5,11 @@
     =javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    = yield
+    =render "fragments/topbar"
+    .row
+      .small-12.columns
+        =render "fragments/message"
+        = yield
     =javascript_include_tag "foundation.min"
     :javascript
       $(document).foundation()
