@@ -1,5 +1,7 @@
 var enterKeyCode = 13
-var message = function(text, type='error',timeout = 3000){
+var message = function(text, type, timeout){
+    type = type || 'error'
+    timeout = timeout || 3000
     switch  (type){
         case 'error':
             typeId = 'error'
@@ -17,12 +19,12 @@ var message = function(text, type='error',timeout = 3000){
 }
 
 var onLoadData=function(result){
+    alert(result['status'])
     var status = result['status']
     if (status=='error'){message(result['errors'],status)}
     var notice = result['notice']
     if (notice){message(result['notice'],'notice',6000)}
     var data = result['data']
-    alert(data)
 }
 
 $(document).ready(function(){

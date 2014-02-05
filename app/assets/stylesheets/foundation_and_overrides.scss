@@ -1327,7 +1327,6 @@ $default-float: left;
 @import 'foundation';
 
 
-
 .error-alert-box {@include alert($bg: #ce4323);}
 .notice-alert-box {@include alert($bg: #ce9906);}
 .default-alert-box {@include alert($bg: #00bbce);}

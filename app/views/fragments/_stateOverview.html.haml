@@ -1,13 +1,37 @@
+%ul#detailsDrop.f-dropdown{"data-dropdown-content"=>true}
+  %li
+    %a.button{"data-reveal-id"=>"GoogleMapsDetails","data-reveal"=>true} Find at Google Map
+  %li
+    %a.button{"data-reveal-id"=>"graphsDetails","data-reveal"=>true} Open graphs
+  %li
+    %a.button{"data-reveal-id"=>"fullDetails","data-reveal"=>true} View details
+%ul#compareDrop.f-dropdown{"data-dropdown-content"=>true}
+  %li
+    %a.button To compare group
+  %li
+    %a.button Compare random
+  %li
+    %a.button Compare closest
+.reveal-modal#GoogleMapsDetails{"data-reveal"=>true}
+  %h5 Look at this ZipCode at Google Maps
+.reveal-modal#graphsDetails{"data-reveal"=>true}
+  %h5 Look at this ZipCode in graphs
+.reveal-modal#fullDetails{"data-reveal"=>true}
+  %h5 Look at full details this ZipCode
 .panel
   %ul.pricing-table
     %li.title ZipCode (98549)
     %li.price Maine(ME)
     %li.bullet-item County - AROOSTOOK
-    %li.bullet-item
-      %span.label google maps
     %li.description AUBURN, WOOLWICH TWP, LOGAN TWP, LOGAN, WOOLWICH
-    %li.cta-button
-      %a.button Compare
-
-
+    %li.bullet-item
+      .button-bar
+        %ul.button-group
+          .row
+            .small-6.columns
+              %li
+                %a.button.dropdown.medium{"data-dropdown"=>"detailsDrop"} Details
+            .small-6.columns
+              %li
+                %a.button.dropdown{"data-dropdown"=>"compareDrop"} Compare
 
