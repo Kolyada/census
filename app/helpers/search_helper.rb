@@ -1,7 +1,60 @@
 module SearchHelper
   include ApplicationHelper
-  def allowSearchString(data)
-    allowString = ('A'..'Z').map{|x|x}.join+('0'..'9').map{|x|x}.join+" #&'()-./"
+  def fullSearchByZip(zipdata)
+    ziplist = zipdata.split('').select{|l| ((0..9).map{|d|d.to_s}<<'|').include?(l)}
+              .join('').split('|').map{|x|x.to_i}.select{|d| (1..100000).include?(d)}
+    return jsonResult(error:I18n.t("errors.emptyZipList")) if ziplist.empty?
+    ziplist = ziplist[0,DataSearchLimit]
+    cur = ZipCode.includes("state").includes("cbsa").includes("city_aliases").where(ZipCode:ziplist)
+    output = jsonResult(data:serializeZips(cur))
+    output[:notice] = I18n.t("messages.manyZips") if (ziplist.size>DataSearchLimit)
+    output
+  end
+
+  def shortSearchByZip(zipdata)
+    result ||= {}
+    zip = zipdata.to_i
+    return jsonResult(error:I18n.t("errors.longZip")) unless (1..99999).include?(zip)
+    sql = SqlShortSearch + %Q[where z."ZipCode"=#{zip}]
+    cur = ActiveRecord::Base.connection.execute(sql)
+    return jsonResult(error:I18n.t("errors.noZip")) unless cur.any?
+    result['CityAbbreviation'] = []
+    cur.each do |obj|
+      obj.each_pair{|k,v| result[k]=v unless (k=='CityAbbreviation'  || v.blank?)}
+      result['CityAbbreviation'] << obj['CityAbbreviation'] unless obj['CityAbbreviation'].blank?
+      result['CityAbbreviation'].uniq!
+    end
+    jsonResult(status:'success',data:[result])
+  end
+
+  def shortSearchByCity(input)
+    return jsonResult(error:I18n.t("errors.noParam")) if input.nil?
+    data = allowCitySearchString(input)
+    return  jsonResult(error:I18n.t("errors.zeroSize")) if data.blank?
+    return jsonResult(error:I18n.t("errors.tooShort")) if data.size<3
+    sql = SqlShortSearch +
+        %Q[where z."County" like '%#{data}%' or c."CBSAName" like '%#{data}%' or a."City" like '%#{data}%' or a."CityAbbreviation" like '%#{data}%'
+        order by z."ZipCode" limit #{DataSearchLimit}]
+    cur = ActiveRecord::Base.connection.execute(sql)
+    return jsonResult(error:I18n.t("errors.noCity")) unless cur.any?
+    result = []
+    row = {}
+    cur.each do |obj|
+      if row['ZipCode'] == obj['ZipCode']
+        row = makeRow(obj,row)
+      else
+        result << row unless row.blank?
+        row = makeRow(obj)
+      end
+    end
+    result << row
+    output = jsonResult(status:'success',data:[result])
+    output[:notice] = I18n.t("messages.tooLong") if (cur.count == DataSearchLimit)
+    output
+  end
+
+  def allowCitySearchString(data)
+    allowString = ('A'..'Z').map{|x|x}.join+('0'..'9').map{|x|x}.join+" #&'()-_./"
     data.upcase.split('').select{|x| allowString.include?(x)}.join('').rstrip
   end
 
@@ -37,10 +90,9 @@ module SearchHelper
       record = rec.as_json
       record['city_aliases'] = rec.city_aliases.as_json
       record['state'] = rec.state.as_json
+      record['cbsa'] = rec.cbsa.as_json if record.include?('cbsa')
       record
     end
     result
   end
 end
-
-

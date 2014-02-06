@@ -28,6 +28,8 @@ en:
     longZip: "ZipCode contains 1..5 digits"
     tooShort: "Search value is too short"
     noCity: "No one object was founded by city"
+    emptyZipList: "ZipCode list can't be empty"
   messages:
     tooLong: "Too much data, specify your inquiry"
+    manyZips: "List of zipcodes was trimmed"
 

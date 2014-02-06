@@ -11,11 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140205002612) do
+ActiveRecord::Schema.define(version: 20140205222319) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-  enable_extension "adminpack"
+  create_table "cbsas", primary_key: "CBSA", force: true do |t|
+    t.string  "CBSAName"
+    t.integer "CBSADivision"
+    t.string  "CBSAStatisticType"
+  end
+
+  add_index "cbsas", ["CBSAName"], name: "index_cbsas_on_CBSAName", using: :btree
 
   create_table "city_aliases", force: true do |t|
     t.integer "zip_code_id"
@@ -26,18 +30,6 @@ ActiveRecord::Schema.define(version: 20140205002612) do
   add_index "city_aliases", ["City"], name: "index_city_aliases_on_City", using: :btree
   add_index "city_aliases", ["CityAbbreviation"], name: "index_city_aliases_on_CityAbbreviation", using: :btree
   add_index "city_aliases", ["zip_code_id"], name: "index_city_aliases_on_zip_code_id", using: :btree
-
-  create_table "easy_zips", primary_key: "ZipCode", force: true do |t|
-    t.float   "Longitude"
-    t.float   "Latitude"
-    t.string  "County"
-    t.integer "state_id"
-  end
-
-  add_index "easy_zips", ["County"], name: "index_easy_zips_on_County", using: :btree
-  add_index "easy_zips", ["Latitude"], name: "index_easy_zips_on_Latitude", using: :btree
-  add_index "easy_zips", ["Longitude"], name: "index_easy_zips_on_Longitude", using: :btree
-  add_index "easy_zips", ["state_id"], name: "index_easy_zips_on_state_id", using: :btree
 
   create_table "loaded_data", force: true do |t|
     t.integer "ZipCode"
@@ -277,10 +269,7 @@ ActiveRecord::Schema.define(version: 20140205002612) do
     t.string  "PMSA"
     t.string  "PMSAName"
     t.string  "CSA"
-    t.string  "CSAName"
-    t.string  "CBSA"
-    t.string  "CBSAName"
-    t.string  "CBSADivision"
+    t.integer "cbsa_id"
     t.string  "CBSAStatisticType"
     t.string  "CBSADivisionName"
     t.integer "TotalNumberOfBusinesses"
@@ -414,7 +403,9 @@ ActiveRecord::Schema.define(version: 20140205002612) do
     t.integer "VacantHousingUnitsAllOtherVacants"
   end
 
+  add_index "zip_codes", ["County"], name: "index_zip_codes_on_County", using: :btree
   add_index "zip_codes", ["Latitude"], name: "index_zip_codes_on_Latitude", using: :btree
   add_index "zip_codes", ["Longitude"], name: "index_zip_codes_on_Longitude", using: :btree
+  add_index "zip_codes", ["state_id"], name: "index_zip_codes_on_state_id", using: :btree
 
 end

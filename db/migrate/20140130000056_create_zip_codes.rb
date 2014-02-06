@@ -36,10 +36,7 @@ class CreateZipCodes < ActiveRecord::Migration
       t.string  :PMSA
       t.string  :PMSAName
       t.string  :CSA
-      t.string  :CSAName
-      t.string  :CBSA
-      t.string  :CBSAName
-      t.string  :CBSADivision
+      t.belongs_to :cbsa
       t.string  :CBSAStatisticType
       t.string  :CBSADivisionName
       t.integer :TotalNumberOfBusinesses

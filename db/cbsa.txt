@@ -1,0 +1,804 @@
+10020;Abbeville, LA;;Micro
+10100;Aberdeen, SD;;Micro
+10180;Abilene, TX;;Metro
+10220;Ada, OK;;Micro
+10260;Adjuntas, PR;;Micro
+10300;Adrian, MI;;Micro
+10380;Aguadilla-Isabela-San Sebastián, PR;;Metro
+10420;Akron, OH;;Metro
+10500;Albany, GA;;Metro
+10580;Albany-Schenectady-Troy, NY;;Metro
+10620;Albemarle, NC;;Micro
+10660;Albert Lea, MN;;Micro
+10700;Albertville, AL;;Micro
+10760;Alexander City, AL;;Micro
+10780;Alexandria, LA;;Metro
+10820;Alexandria, MN;;Micro
+10860;Alice, TX;;Micro
+10880;Allegan, MI;;Micro
+10900;Allentown-Bethlehem-Easton, PA-NJ;;Metro
+10940;Alma, MI;;Micro
+10980;Alpena, MI;;Micro
+11020;Altoona, PA;;Metro
+11060;Altus, OK;;Micro
+11100;Amarillo, TX;;Metro
+11140;Americus, GA;;Micro
+11180;Ames, IA;;Metro
+11220;Amsterdam, NY;;Micro
+11300;Anderson, IN;;Metro
+11340;Anderson, SC;;Metro
+11380;Andrews, TX;;Micro
+11420;Angola, IN;;Micro
+11460;Ann Arbor, MI;;Metro
+11500;Anniston-Oxford, AL;;Metro
+11540;Appleton, WI;;Metro
+11580;Arcadia, FL;;Micro
+11620;Ardmore, OK;;Micro
+11660;Arkadelphia, AR;;Micro
+11700;Asheville, NC;;Metro
+11740;Ashland, OH;;Micro
+11780;Ashtabula, OH;;Micro
+11860;Atchison, KS;;Micro
+11900;Athens, OH;;Micro
+11940;Athens, TN;;Micro
+11980;Athens, TX;;Micro
+12020;Athens-Clarke County, GA;;Metro
+12060;Atlanta-Sandy Springs-Marietta, GA;;Metro
+12100;Atlantic City, NJ;;Metro
+12140;Auburn, IN;;Micro
+12180;Auburn, NY;;Micro
+12220;Auburn-Opelika, AL;;Metro
+12260;Augusta-Richmond County, GA-SC;;Metro
+12300;Augusta-Waterville, ME;;Micro
+12380;Austin, MN;;Micro
+12420;Austin-Round Rock-San Marcos, TX;;Metro
+12460;Bainbridge, GA;;Micro
+12580;Baltimore-Towson, MD;;Metro
+12620;Bangor, ME;;Metro
+12660;Baraboo, WI;;Micro
+12700;Barnstable Town, MA;;Metro
+12740;Barre, VT;;Micro
+12780;Bartlesville, OK;;Micro
+12820;Bastrop, LA;;Micro
+12860;Batavia, NY;;Micro
+12900;Batesville, AR;;Micro
+12940;Baton Rouge, LA;;Metro
+12980;Battle Creek, MI;;Metro
+13020;Bay City, MI;;Metro
+13060;Bay City, TX;;Micro
+13100;Beatrice, NE;;Micro
+13140;Beaumont-Port Arthur, TX;;Metro
+13180;Beaver Dam, WI;;Micro
+13220;Beckley, WV;;Micro
+13260;Bedford, IN;;Micro
+13300;Beeville, TX;;Micro
+13340;Bellefontaine, OH;;Micro
+13420;Bemidji, MN;;Micro
+13500;Bennettsville, SC;;Micro
+13540;Bennington, VT;;Micro
+13620;Berlin, NH-VT;;Micro
+13660;Big Rapids, MI;;Micro
+13700;Big Spring, TX;;Micro
+13740;Billings, MT;;Metro
+13780;Binghamton, NY;;Metro
+13820;Birmingham-Hoover, AL;;Metro
+13900;Bismarck, ND;;Metro
+13980;Blacksburg-Christiansburg-Radford, VA;;Metro
+14020;Bloomington, IN;;Metro
+14060;Bloomington-Normal, IL;;Metro
+14100;Bloomsburg-Berwick, PA;;Micro
+14140;Bluefield, WV-VA;;Micro
+14180;Blytheville, AR;;Micro
+14220;Bogalusa, LA;;Micro
+14300;Bonham, TX;;Micro
+14340;Boone, IA;;Micro
+14380;Boone, NC;;Micro
+14420;Borger, TX;;Micro
+14460;Boston-Cambridge-Quincy, MA-NH;40484;Metro
+14500;Boulder, CO;;Metro
+14540;Bowling Green, KY;;Metro
+14580;Bozeman, MT;;Micro
+14620;Bradford, PA;;Micro
+14660;Brainerd, MN;;Micro
+14700;Branson, MO;;Micro
+14780;Brenham, TX;;Micro
+14820;Brevard, NC;;Micro
+14860;Bridgeport-Stamford-Norwalk, CT;;Metro
+15020;Brookhaven, MS;;Micro
+15100;Brookings, SD;;Micro
+15140;Brownsville, TN;;Micro
+15180;Brownsville-Harlingen, TX;;Metro
+15220;Brownwood, TX;;Micro
+15260;Brunswick, GA;;Metro
+15340;Bucyrus, OH;;Micro
+15380;Buffalo-Niagara Falls, NY;;Metro
+15460;Burlington, IA-IL;;Micro
+15500;Burlington, NC;;Metro
+15540;Burlington-South Burlington, VT;;Metro
+15580;Butte-Silver Bow, MT;;Micro
+15620;Cadillac, MI;;Micro
+15660;Calhoun, GA;;Micro
+15700;Cambridge, MD;;Micro
+15740;Cambridge, OH;;Micro
+15780;Camden, AR;;Micro
+15820;Campbellsville, KY;;Micro
+15860;Canon City, CO;;Micro
+15900;Canton, IL;;Micro
+15940;Canton-Massillon, OH;;Metro
+15980;Cape Coral-Fort Myers, FL;;Metro
+16020;Cape Girardeau-Jackson, MO-IL;;Metro
+16060;Carbondale, IL;;Micro
+16300;Cedar Rapids, IA;;Metro
+16340;Cedartown, GA;;Micro
+16380;Celina, OH;;Micro
+16420;Central City, KY;;Micro
+16460;Centralia, IL;;Micro
+16540;Chambersburg, PA;;Micro
+16580;Champaign-Urbana, IL;;Metro
+16620;Charleston, WV;;Metro
+16660;Charleston-Mattoon, IL;;Micro
+16700;Charleston-North Charleston, SC;;Metro
+16740;Charlotte-Gastonia-Rock Hill, NC-SC;;Metro
+16820;Charlottesville, VA;;Metro
+16860;Chattanooga, TN-GA;;Metro
+16900;Chester, SC;;Micro
+16980;Chicago-Naperville-Joliet, IL-IN-WI;29404;Metro
+17060;Chillicothe, OH;;Micro
+17140;Cincinnati-Middletown, OH-KY-IN;;Metro
+17200;Claremont, NH;;Micro
+17220;Clarksburg, WV;;Micro
+17260;Clarksdale, MS;;Micro
+17300;Clarksville, TN-KY;;Metro
+17380;Cleveland, MS;;Micro
+17420;Cleveland, TN;;Metro
+17460;Cleveland-Elyria-Mentor, OH;;Metro
+17500;Clewiston, FL;;Micro
+17540;Clinton, IA;;Micro
+17620;Coamo, PR;;Micro
+17700;Coffeyville, KS;;Micro
+17740;Coldwater, MI;;Micro
+17780;College Station-Bryan, TX;;Metro
+17820;Colorado Springs, CO;;Metro
+17860;Columbia, MO;;Metro
+17900;Columbia, SC;;Metro
+17940;Columbia, TN;;Micro
+17980;Columbus, GA-AL;;Metro
+18020;Columbus, IN;;Metro
+18060;Columbus, MS;;Micro
+18100;Columbus, NE;;Micro
+18140;Columbus, OH;;Metro
+18180;Concord, NH;;Micro
+18220;Connersville, IN;;Micro
+18260;Cookeville, TN;;Micro
+18340;Corbin, KY;;Micro
+18380;Cordele, GA;;Micro
+18420;Corinth, MS;;Micro
+18460;Cornelia, GA;;Micro
+18500;Corning, NY;;Micro
+18580;Corpus Christi, TX;;Metro
+18620;Corsicana, TX;;Micro
+18660;Cortland, NY;;Micro
+18740;Coshocton, OH;;Micro
+18820;Crawfordsville, IN;;Micro
+18880;Crestview-Fort Walton Beach-Destin, FL;;Metro
+18900;Crossville, TN;;Micro
+18940;Crowley, LA;;Micro
+18980;Cullman, AL;;Micro
+19020;Culpeper, VA;;Micro
+19060;Cumberland, MD-WV;;Metro
+19100;Dallas-Fort Worth-Arlington, TX;23104;Metro
+19140;Dalton, GA;;Metro
+19180;Danville, IL;;Metro
+19220;Danville, KY;;Micro
+19260;Danville, VA;;Metro
+19300;Daphne-Fairhope-Foley, AL;;Micro
+19340;Davenport-Moline-Rock Island, IA-IL;;Metro
+19380;Dayton, OH;;Metro
+19460;Decatur, AL;;Metro
+19500;Decatur, IL;;Metro
+19540;Decatur, IN;;Micro
+19580;Defiance, OH;;Micro
+19620;Del Rio, TX;;Micro
+19660;Deltona-Daytona Beach-Ormond Beach, FL;;Metro
+19740;Denver-Aurora, CO;;Metro
+19760;DeRidder, LA;;Micro
+19780;Des Moines-West Des Moines, IA;;Metro
+19820;Detroit-Warren-Livonia, MI;47644;Metro
+19860;Dickinson, ND;;Micro
+19900;Dillon, SC;;Micro
+19940;Dixon, IL;;Micro
+19980;Dodge City, KS;;Micro
+20020;Dothan, AL;;Metro
+20060;Douglas, GA;;Micro
+20100;Dover, DE;;Metro
+20140;Dublin, GA;;Micro
+20180;DuBois, PA;;Micro
+20220;Dubuque, IA;;Metro
+20260;Duluth, MN-WI;;Metro
+20300;Dumas, TX;;Micro
+20340;Duncan, OK;;Micro
+20380;Dunn, NC;;Micro
+20420;Durango, CO;;Micro
+20460;Durant, OK;;Micro
+20500;Durham, NC;;Metro
+20540;Dyersburg, TN;;Micro
+20580;Eagle Pass, TX;;Micro
+20620;East Liverpool-Salem, OH;;Micro
+20660;Easton, MD;;Micro
+20700;East Stroudsburg, PA;;Micro
+20740;Eau Claire, WI;;Metro
+20780;Edwards, CO;;Micro
+20820;Effingham, IL;;Micro
+20900;El Campo, TX;;Micro
+20980;El Dorado, AR;;Micro
+21020;Elizabeth City, NC;;Micro
+21060;Elizabethtown, KY;;Metro
+21120;Elk City, OK;;Micro
+21140;Elkhart-Goshen, IN;;Metro
+21300;Elmira, NY;;Metro
+21340;El Paso, TX;;Metro
+21380;Emporia, KS;;Micro
+21420;Enid, OK;;Micro
+21460;Enterprise-Ozark, AL;;Micro
+21500;Erie, PA;;Metro
+21540;Escanaba, MI;;Micro
+21640;Eufaula, AL-GA;;Micro
+21780;Evansville, IN-KY;;Metro
+21860;Fairmont, MN;;Micro
+21900;Fairmont, WV;;Micro
+21940;Fajardo, PR;;Metro
+22020;Fargo, ND-MN;;Metro
+22060;Faribault-Northfield, MN;;Micro
+22100;Farmington, MO;;Micro
+22180;Fayetteville, NC;;Metro
+22220;Fayetteville-Springdale-Rogers, AR-MO;;Metro
+22260;Fergus Falls, MN;;Micro
+22300;Findlay, OH;;Micro
+22340;Fitzgerald, GA;;Micro
+22420;Flint, MI;;Metro
+22500;Florence, SC;;Metro
+22520;Florence-Muscle Shoals, AL;;Metro
+22540;Fond du Lac, WI;;Metro
+22580;Forest City, NC;;Micro
+22620;Forrest City, AR;;Micro
+22660;Fort Collins-Loveland, CO;;Metro
+22700;Fort Dodge, IA;;Micro
+22780;Fort Leonard Wood, MO;;Micro
+22800;Fort Madison-Keokuk, IA-MO;;Micro
+22820;Fort Morgan, CO;;Micro
+22840;Fort Payne, AL;;Micro
+22860;Fort Polk South, LA;;Micro
+22900;Fort Smith, AR-OK;;Metro
+22980;Fort Valley, GA;;Micro
+23060;Fort Wayne, IN;;Metro
+23140;Frankfort, IN;;Micro
+23180;Frankfort, KY;;Micro
+23240;Fredericksburg, TX;;Micro
+23300;Freeport, IL;;Micro
+23340;Fremont, NE;;Micro
+23380;Fremont, OH;;Micro
+23460;Gadsden, AL;;Metro
+23500;Gaffney, SC;;Micro
+23540;Gainesville, FL;;Metro
+23580;Gainesville, GA;;Metro
+23620;Gainesville, TX;;Micro
+23660;Galesburg, IL;;Micro
+23780;Garden City, KS;;Micro
+23860;Georgetown, SC;;Micro
+23900;Gettysburg, PA;;Micro
+23980;Glasgow, KY;;Micro
+24020;Glens Falls, NY;;Metro
+24100;Gloversville, NY;;Micro
+24140;Goldsboro, NC;;Metro
+24180;Granbury, TX;;Micro
+24220;Grand Forks, ND-MN;;Metro
+24260;Grand Island, NE;;Micro
+24340;Grand Rapids-Wyoming, MI;;Metro
+24460;Great Bend, KS;;Micro
+24500;Great Falls, MT;;Metro
+24540;Greeley, CO;;Metro
+24580;Green Bay, WI;;Metro
+24620;Greeneville, TN;;Micro
+24660;Greensboro-High Point, NC;;Metro
+24700;Greensburg, IN;;Micro
+24740;Greenville, MS;;Micro
+24780;Greenville, NC;;Metro
+24820;Greenville, OH;;Micro
+24860;Greenville-Mauldin-Easley, SC;;Metro
+24900;Greenwood, MS;;Micro
+24940;Greenwood, SC;;Micro
+24980;Grenada, MS;;Micro
+25020;Guayama, PR;;Metro
+25060;Gulfport-Biloxi, MS;;Metro
+25100;Guymon, OK;;Micro
+25180;Hagerstown-Martinsburg, MD-WV;;Metro
+25220;Hammond, LA;;Micro
+25300;Hannibal, MO;;Micro
+25340;Harriman, TN;;Micro
+25380;Harrisburg, IL;;Micro
+25420;Harrisburg-Carlisle, PA;;Metro
+25460;Harrison, AR;;Micro
+25500;Harrisonburg, VA;;Metro
+25540;Hartford-West Hartford-East Hartford, CT;;Metro
+25580;Hastings, NE;;Micro
+25620;Hattiesburg, MS;;Metro
+25660;Havre, MT;;Micro
+25700;Hays, KS;;Micro
+25740;Helena, MT;;Micro
+25760;Helena-West Helena, AR;;Micro
+25780;Henderson, NC;;Micro
+25820;Hereford, TX;;Micro
+25860;Hickory-Lenoir-Morganton, NC;;Metro
+25940;Hilton Head Island-Beaufort, SC;;Micro
+25980;Hinesville-Fort Stewart, GA;;Metro
+26100;Holland-Grand Haven, MI;;Metro
+26140;Homosassa Springs, FL;;Micro
+26260;Hope, AR;;Micro
+26300;Hot Springs, AR;;Metro
+26340;Houghton, MI;;Micro
+26380;Houma-Bayou Cane-Thibodaux, LA;;Metro
+26420;Houston-Sugar Land-Baytown, TX;;Metro
+26460;Hudson, NY;;Micro
+26480;Humboldt, TN;;Micro
+26500;Huntingdon, PA;;Micro
+26540;Huntington, IN;;Micro
+26580;Huntington-Ashland, WV-KY-OH;;Metro
+26620;Huntsville, AL;;Metro
+26660;Huntsville, TX;;Micro
+26700;Huron, SD;;Micro
+26740;Hutchinson, KS;;Micro
+26780;Hutchinson, MN;;Micro
+26860;Indiana, PA;;Micro
+26900;Indianapolis-Carmel, IN;;Metro
+26940;Indianola, MS;;Micro
+26980;Iowa City, IA;;Metro
+27020;Iron Mountain, MI-WI;;Micro
+27060;Ithaca, NY;;Metro
+27100;Jackson, MI;;Metro
+27140;Jackson, MS;;Metro
+27180;Jackson, TN;;Metro
+27260;Jacksonville, FL;;Metro
+27300;Jacksonville, IL;;Micro
+27340;Jacksonville, NC;;Metro
+27380;Jacksonville, TX;;Micro
+27420;Jamestown, ND;;Micro
+27460;Jamestown-Dunkirk-Fredonia, NY;;Micro
+27500;Janesville, WI;;Metro
+27540;Jasper, IN;;Micro
+27580;Jayuya, PR;;Micro
+27620;Jefferson City, MO;;Metro
+27660;Jennings, LA;;Micro
+27700;Jesup, GA;;Micro
+27740;Johnson City, TN;;Metro
+27780;Johnstown, PA;;Metro
+27860;Jonesboro, AR;;Metro
+27900;Joplin, MO;;Metro
+28020;Kalamazoo-Portage, MI;;Metro
+28060;Kalispell, MT;;Micro
+28100;Kankakee-Bradley, IL;;Metro
+28140;Kansas City, MO-KS;;Metro
+28260;Kearney, NE;;Micro
+28300;Keene, NH;;Micro
+28340;Kendallville, IN;;Micro
+28380;Kennett, MO;;Micro
+28500;Kerrville, TX;;Micro
+28580;Key West, FL;;Micro
+28620;Kill Devil Hills, NC;;Micro
+28660;Killeen-Temple-Fort Hood, TX;;Metro
+28700;Kingsport-Bristol-Bristol, TN-VA;;Metro
+28740;Kingston, NY;;Metro
+28780;Kingsville, TX;;Micro
+28820;Kinston, NC;;Micro
+28860;Kirksville, MO;;Micro
+28940;Knoxville, TN;;Metro
+29020;Kokomo, IN;;Metro
+29060;Laconia, NH;;Micro
+29100;La Crosse, WI-MN;;Metro
+29140;Lafayette, IN;;Metro
+29180;Lafayette, LA;;Metro
+29220;La Follette, TN;;Micro
+29300;LaGrange, GA;;Micro
+29340;Lake Charles, LA;;Metro
+29380;Lake City, FL;;Micro
+29460;Lakeland, FL;;Metro
+29500;Lamesa, TX;;Micro
+29540;Lancaster, PA;;Metro
+29580;Lancaster, SC;;Micro
+29620;Lansing-East Lansing, MI;;Metro
+29700;Laredo, TX;;Metro
+29860;Laurel, MS;;Micro
+29900;Laurinburg, NC;;Micro
+29940;Lawrence, KS;;Metro
+29980;Lawrenceburg, TN;;Micro
+30020;Lawton, OK;;Metro
+30060;Lebanon, MO;;Micro
+30100;Lebanon, NH-VT;;Micro
+30140;Lebanon, PA;;Metro
+30220;Levelland, TX;;Micro
+30260;Lewisburg, PA;;Micro
+30280;Lewisburg, TN;;Micro
+30340;Lewiston-Auburn, ME;;Metro
+30380;Lewistown, PA;;Micro
+30420;Lexington, NE;;Micro
+30460;Lexington-Fayette, KY;;Metro
+30500;Lexington Park, MD;;Micro
+30580;Liberal, KS;;Micro
+30620;Lima, OH;;Metro
+30660;Lincoln, IL;;Micro
+30700;Lincoln, NE;;Metro
+30740;Lincolnton, NC;;Micro
+30780;Little Rock-North Little Rock-Conway, AR;;Metro
+30820;Lock Haven, PA;;Micro
+30900;Logansport, IN;;Micro
+30940;London, KY;;Micro
+30980;Longview, TX;;Metro
+31140;Louisville/Jefferson County, KY-IN;;Metro
+31180;Lubbock, TX;;Metro
+31260;Lufkin, TX;;Micro
+31300;Lumberton, NC;;Micro
+31340;Lynchburg, VA;;Metro
+31380;Macomb, IL;;Micro
+31420;Macon, GA;;Metro
+31500;Madison, IN;;Micro
+31540;Madison, WI;;Metro
+31580;Madisonville, KY;;Micro
+31620;Magnolia, AR;;Micro
+31660;Malone, NY;;Micro
+31700;Manchester-Nashua, NH;;Metro
+31740;Manhattan, KS;;Metro
+31820;Manitowoc, WI;;Micro
+31860;Mankato-North Mankato, MN;;Metro
+31900;Mansfield, OH;;Metro
+31920;Marble Falls, TX;;Micro
+31940;Marinette, WI-MI;;Micro
+31980;Marion, IN;;Micro
+32020;Marion, OH;;Micro
+32060;Marion-Herrin, IL;;Micro
+32100;Marquette, MI;;Micro
+32140;Marshall, MN;;Micro
+32180;Marshall, MO;;Micro
+32220;Marshall, TX;;Micro
+32260;Marshalltown, IA;;Micro
+32270;Marshfield-Wisconsin Rapids, WI;;Micro
+32280;Martin, TN;;Micro
+32300;Martinsville, VA;;Micro
+32340;Maryville, MO;;Micro
+32380;Mason City, IA;;Micro
+32420;Mayagüez, PR;;Metro
+32460;Mayfield, KY;;Micro
+32500;Maysville, KY;;Micro
+32540;McAlester, OK;;Micro
+32580;McAllen-Edinburg-Mission, TX;;Metro
+32620;McComb, MS;;Micro
+32660;McMinnville, TN;;Micro
+32700;McPherson, KS;;Micro
+32740;Meadville, PA;;Micro
+32820;Memphis, TN-MS-AR;;Metro
+32860;Menomonie, WI;;Micro
+32940;Meridian, MS;;Micro
+32980;Merrill, WI;;Micro
+33020;Mexico, MO;;Micro
+33060;Miami, OK;;Micro
+33100;Miami-Fort Lauderdale-Pompano Beach, FL;48424;Metro
+33140;Michigan City-La Porte, IN;;Metro
+33180;Middlesborough, KY;;Micro
+33220;Midland, MI;;Micro
+33260;Midland, TX;;Metro
+33300;Milledgeville, GA;;Micro
+33340;Milwaukee-Waukesha-West Allis, WI;;Metro
+33380;Minden, LA;;Micro
+33420;Mineral Wells, TX;;Micro
+33460;Minneapolis-St. Paul-Bloomington, MN-WI;;Metro
+33500;Minot, ND;;Micro
+33540;Missoula, MT;;Metro
+33580;Mitchell, SD;;Micro
+33620;Moberly, MO;;Micro
+33660;Mobile, AL;;Metro
+33740;Monroe, LA;;Metro
+33780;Monroe, MI;;Metro
+33820;Monroe, WI;;Micro
+33860;Montgomery, AL;;Metro
+33940;Montrose, CO;;Micro
+33980;Morehead City, NC;;Micro
+34020;Morgan City, LA;;Micro
+34060;Morgantown, WV;;Metro
+34100;Morristown, TN;;Metro
+34220;Moultrie, GA;;Micro
+34260;Mountain Home, AR;;Micro
+34340;Mount Airy, NC;;Micro
+34380;Mount Pleasant, MI;;Micro
+34420;Mount Pleasant, TX;;Micro
+34460;Mount Sterling, KY;;Micro
+34500;Mount Vernon, IL;;Micro
+34540;Mount Vernon, OH;;Micro
+34620;Muncie, IN;;Metro
+34660;Murray, KY;;Micro
+34700;Muscatine, IA;;Micro
+34740;Muskegon-Norton Shores, MI;;Metro
+34780;Muskogee, OK;;Micro
+34820;Myrtle Beach-Conway-North Myrtle Beach, SC;;Metro
+34860;Nacogdoches, TX;;Micro
+34940;Naples-Marco Island, FL;;Metro
+34980;Nashville-Davidson--Murfreesboro--Franklin, TN;;Metro
+35020;Natchez, MS-LA;;Micro
+35060;Natchitoches, LA;;Micro
+35100;New Bern, NC;;Micro
+35140;Newberry, SC;;Micro
+35220;New Castle, IN;;Micro
+35260;New Castle, PA;;Micro
+35300;New Haven-Milford, CT;;Metro
+35340;New Iberia, LA;;Micro
+35380;New Orleans-Metairie-Kenner, LA;;Metro
+35420;New Philadelphia-Dover, OH;;Micro
+35460;Newport, TN;;Micro
+35500;Newton, IA;;Micro
+35580;New Ulm, MN;;Micro
+35620;New York-Northern New Jersey-Long Island, NY-NJ-PA;35644;Metro
+35660;Niles-Benton Harbor, MI;;Metro
+35740;Norfolk, NE;;Micro
+35820;North Platte, NE;;Micro
+35840;North Port-Bradenton-Sarasota, FL;;Metro
+35860;North Vernon, IN;;Micro
+35900;North Wilkesboro, NC;;Micro
+35940;Norwalk, OH;;Micro
+35980;Norwich-New London, CT;;Metro
+36060;Oak Hill, WV;;Micro
+36100;Ocala, FL;;Metro
+36140;Ocean City, NJ;;Metro
+36180;Ocean Pines, MD;;Micro
+36220;Odessa, TX;;Metro
+36300;Ogdensburg-Massena, NY;;Micro
+36340;Oil City, PA;;Micro
+36380;Okeechobee, FL;;Micro
+36420;Oklahoma City, OK;;Metro
+36460;Olean, NY;;Micro
+36540;Omaha-Council Bluffs, NE-IA;;Metro
+36580;Oneonta, NY;;Micro
+36660;Opelousas-Eunice, LA;;Micro
+36700;Orangeburg, SC;;Micro
+36740;Orlando-Kissimmee-Sanford, FL;;Metro
+36780;Oshkosh-Neenah, WI;;Metro
+36820;Oskaloosa, IA;;Micro
+36860;Ottawa-Streator, IL;;Micro
+36900;Ottumwa, IA;;Micro
+36940;Owatonna, MN;;Micro
+36980;Owensboro, KY;;Metro
+37020;Owosso, MI;;Micro
+37060;Oxford, MS;;Micro
+37140;Paducah, KY-IL;;Micro
+37260;Palatka, FL;;Micro
+37300;Palestine, TX;;Micro
+37340;Palm Bay-Melbourne-Titusville, FL;;Metro
+37380;Palm Coast, FL;;Metro
+37420;Pampa, TX;;Micro
+37460;Panama City-Lynn Haven, FL;;Metro
+37500;Paragould, AR;;Micro
+37540;Paris, TN;;Micro
+37580;Paris, TX;;Micro
+37620;Parkersburg-Marietta-Vienna, WV-OH;;Metro
+37660;Parsons, KS;;Micro
+37700;Pascagoula, MS;;Metro
+37780;Pecos, TX;;Micro
+37800;Pella, IA;;Micro
+37860;Pensacola-Ferry Pass-Brent, FL;;Metro
+37900;Peoria, IL;;Metro
+37940;Peru, IN;;Micro
+37980;Philadelphia-Camden-Wilmington, PA-NJ-DE-MD;48864;Metro
+38100;Picayune, MS;;Micro
+38180;Pierre, SD;;Micro
+38200;Pierre Part, LA;;Micro
+38220;Pine Bluff, AR;;Metro
+38260;Pittsburg, KS;;Micro
+38300;Pittsburgh, PA;;Metro
+38340;Pittsfield, MA;;Metro
+38380;Plainview, TX;;Micro
+38420;Platteville, WI;;Micro
+38460;Plattsburgh, NY;;Micro
+38500;Plymouth, IN;;Micro
+38580;Point Pleasant, WV-OH;;Micro
+38620;Ponca City, OK;;Micro
+38660;Ponce, PR;;Metro
+38700;Pontiac, IL;;Micro
+38740;Poplar Bluff, MO;;Micro
+38860;Portland-South Portland-Biddeford, ME;;Metro
+38940;Port St. Lucie, FL;;Metro
+39020;Portsmouth, OH;;Micro
+39060;Pottsville, PA;;Micro
+39100;Poughkeepsie-Newburgh-Middletown, NY;;Metro
+39300;Providence-New Bedford-Fall River, RI-MA;;Metro
+39380;Pueblo, CO;;Metro
+39460;Punta Gorda, FL;;Metro
+39500;Quincy, IL-MO;;Micro
+39540;Racine, WI;;Metro
+39580;Raleigh-Cary, NC;;Metro
+39660;Rapid City, SD;;Metro
+39700;Raymondville, TX;;Micro
+39740;Reading, PA;;Metro
+39860;Red Wing, MN;;Micro
+39980;Richmond, IN;;Micro
+40060;Richmond, VA;;Metro
+40080;Richmond-Berea, KY;;Micro
+40100;Rio Grande City-Roma, TX;;Micro
+40220;Roanoke, VA;;Metro
+40260;Roanoke Rapids, NC;;Micro
+40300;Rochelle, IL;;Micro
+40340;Rochester, MN;;Metro
+40380;Rochester, NY;;Metro
+40420;Rockford, IL;;Metro
+40460;Rockingham, NC;;Micro
+40500;Rockland, ME;;Micro
+40580;Rocky Mount, NC;;Metro
+40620;Rolla, MO;;Micro
+40660;Rome, GA;;Metro
+40780;Russellville, AR;;Micro
+40820;Ruston, LA;;Micro
+40860;Rutland, VT;;Micro
+40980;Saginaw-Saginaw Township North, MI;;Metro
+41060;St. Cloud, MN;;Metro
+41140;St. Joseph, MO-KS;;Metro
+41180;St. Louis, MO-IL;;Metro
+41220;St. Marys, GA;;Micro
+41260;St. Marys, PA;;Micro
+41460;Salina, KS;;Micro
+41540;Salisbury, MD;;Metro
+41580;Salisbury, NC;;Micro
+41660;San Angelo, TX;;Metro
+41700;San Antonio-New Braunfels, TX;;Metro
+41780;Sandusky, OH;;Metro
+41820;Sanford, NC;;Micro
+41900;San Germán-Cabo Rojo, PR;;Metro
+41980;San Juan-Caguas-Guaynabo, PR;;Metro
+42180;Santa Isabel, PR;;Micro
+42300;Sault Ste. Marie, MI;;Micro
+42340;Savannah, GA;;Metro
+42380;Sayre, PA;;Micro
+42420;Scottsbluff, NE;;Micro
+42460;Scottsboro, AL;;Micro
+42500;Scottsburg, IN;;Micro
+42540;Scranton--Wilkes-Barre, PA;;Metro
+42580;Seaford, DE;;Micro
+42620;Searcy, AR;;Micro
+42680;Sebastian-Vero Beach, FL;;Metro
+42700;Sebring, FL;;Micro
+42740;Sedalia, MO;;Micro
+42780;Selinsgrove, PA;;Micro
+42820;Selma, AL;;Micro
+42860;Seneca, SC;;Micro
+42900;Seneca Falls, NY;;Micro
+42940;Sevierville, TN;;Micro
+42980;Seymour, IN;;Micro
+43060;Shawnee, OK;;Micro
+43100;Sheboygan, WI;;Metro
+43140;Shelby, NC;;Micro
+43180;Shelbyville, TN;;Micro
+43300;Sherman-Denison, TX;;Metro
+43340;Shreveport-Bossier City, LA;;Metro
+43380;Sidney, OH;;Micro
+43460;Sikeston, MO;;Micro
+43540;Silverthorne, CO;;Micro
+43580;Sioux City, IA-NE-SD;;Metro
+43620;Sioux Falls, SD;;Metro
+43660;Snyder, TX;;Micro
+43700;Somerset, KY;;Micro
+43740;Somerset, PA;;Micro
+43780;South Bend-Mishawaka, IN-MI;;Metro
+43860;Southern Pines-Pinehurst, NC;;Micro
+43900;Spartanburg, SC;;Metro
+43940;Spearfish, SD;;Micro
+43980;Spencer, IA;;Micro
+44020;Spirit Lake, IA;;Micro
+44100;Springfield, IL;;Metro
+44140;Springfield, MA;;Metro
+44180;Springfield, MO;;Metro
+44220;Springfield, OH;;Metro
+44260;Starkville, MS;;Micro
+44300;State College, PA;;Metro
+44340;Statesboro, GA;;Micro
+44380;Statesville-Mooresville, NC;;Micro
+44420;Staunton-Waynesboro, VA;;Micro
+44500;Stephenville, TX;;Micro
+44540;Sterling, CO;;Micro
+44580;Sterling, IL;;Micro
+44600;Steubenville-Weirton, OH-WV;;Metro
+44620;Stevens Point, WI;;Micro
+44660;Stillwater, OK;;Micro
+44740;Storm Lake, IA;;Micro
+44780;Sturgis, MI;;Micro
+44860;Sulphur Springs, TX;;Micro
+44900;Summerville, GA;;Micro
+44940;Sumter, SC;;Metro
+44980;Sunbury, PA;;Micro
+45020;Sweetwater, TX;;Micro
+45060;Syracuse, NY;;Metro
+45140;Tahlequah, OK;;Micro
+45180;Talladega-Sylacauga, AL;;Micro
+45220;Tallahassee, FL;;Metro
+45260;Tallulah, LA;;Micro
+45300;Tampa-St. Petersburg-Clearwater, FL;;Metro
+45380;Taylorville, IL;;Micro
+45460;Terre Haute, IN;;Metro
+45500;Texarkana, TX-Texarkana, AR;;Metro
+45540;The Villages, FL;;Micro
+45580;Thomaston, GA;;Micro
+45620;Thomasville, GA;;Micro
+45640;Thomasville-Lexington, NC;;Micro
+45660;Tiffin, OH;;Micro
+45700;Tifton, GA;;Micro
+45740;Toccoa, GA;;Micro
+45780;Toledo, OH;;Metro
+45820;Topeka, KS;;Metro
+45860;Torrington, CT;;Micro
+45900;Traverse City, MI;;Micro
+45940;Trenton-Ewing, NJ;;Metro
+45980;Troy, AL;;Micro
+46100;Tullahoma, TN;;Micro
+46140;Tulsa, OK;;Metro
+46180;Tupelo, MS;;Micro
+46220;Tuscaloosa, AL;;Metro
+46260;Tuskegee, AL;;Micro
+46340;Tyler, TX;;Metro
+46420;Union, SC;;Micro
+46460;Union City, TN-KY;;Micro
+46500;Urbana, OH;;Micro
+46540;Utica-Rome, NY;;Metro
+46580;Utuado, PR;;Micro
+46620;Uvalde, TX;;Micro
+46660;Valdosta, GA;;Metro
+46740;Valley, AL;;Micro
+46780;Van Wert, OH;;Micro
+46820;Vermillion, SD;;Micro
+46900;Vernon, TX;;Micro
+46980;Vicksburg, MS;;Micro
+47020;Victoria, TX;;Metro
+47080;Vidalia, GA;;Micro
+47180;Vincennes, IN;;Micro
+47220;Vineland-Millville-Bridgeton, NJ;;Metro
+47260;Virginia Beach-Norfolk-Newport News, VA-NC;;Metro
+47340;Wabash, IN;;Micro
+47380;Waco, TX;;Metro
+47420;Wahpeton, ND-MN;;Micro
+47500;Walterboro, SC;;Micro
+47540;Wapakoneta, OH;;Micro
+47580;Warner Robins, GA;;Metro
+47620;Warren, PA;;Micro
+47660;Warrensburg, MO;;Micro
+47700;Warsaw, IN;;Micro
+47780;Washington, IN;;Micro
+47820;Washington, NC;;Micro
+47900;Washington-Arlington-Alexandria, DC-VA-MD-WV;47894;Metro
+47920;Washington Court House, OH;;Micro
+47940;Waterloo-Cedar Falls, IA;;Metro
+47980;Watertown, SD;;Micro
+48020;Watertown-Fort Atkinson, WI;;Micro
+48060;Watertown-Fort Drum, NY;;Micro
+48100;Wauchula, FL;;Micro
+48140;Wausau, WI;;Metro
+48180;Waycross, GA;;Micro
+48220;Weatherford, OK;;Micro
+48460;West Plains, MO;;Micro
+48500;West Point, MS;;Micro
+48540;Wheeling, WV-OH;;Metro
+48580;Whitewater, WI;;Micro
+48620;Wichita, KS;;Metro
+48660;Wichita Falls, TX;;Metro
+48700;Williamsport, PA;;Metro
+48740;Willimantic, CT;;Micro
+48780;Williston, ND;;Micro
+48820;Willmar, MN;;Micro
+48900;Wilmington, NC;;Metro
+48940;Wilmington, OH;;Micro
+48980;Wilson, NC;;Micro
+49020;Winchester, VA-WV;;Metro
+49060;Winfield, KS;;Micro
+49100;Winona, MN;;Micro
+49180;Winston-Salem, NC;;Metro
+49260;Woodward, OK;;Micro
+49300;Wooster, OH;;Micro
+49340;Worcester, MA;;Metro
+49380;Worthington, MN;;Micro
+49460;Yankton, SD;;Micro
+49500;Yauco, PR;;Metro
+49540;Yazoo City, MS;;Micro
+49620;York-Hanover, PA;;Metro
+49660;Youngstown-Warren-Boardman, OH-PA;;Metro
+49780;Zanesville, OH;;Micro
