@@ -1,34 +1,18 @@
-%nav.top-bar{"data-fragments"=>true}
-  %ul.title-area.right
-    %li.name
-      %h1
-        %a Census analysis and data graphics
-  %ul.title-area
-    %li.name
-      %h1
-        %a{href:'/'} TheLastCensus.com
-  %section.top-bar-section.right
-    %ul
-      %li.divider
-      %li.has-form
-        .row.collapse
-          .small-8.columns
-            %input#topbarSearch{type:'text',placeholder:"Zip or City",maxlength:60}
-          .small-4.columns
-            %a.button.expand#topbarSearchButton Search
-      %li.divider
-      %li
-        %a Overview
-      %li.divider
-      %li.has-dropdown
-        %a Players
-        %ul.dropdown
-          %li
-            %a Player details
-          %li
-            %a Compare players
-          %li
-            %a Players activity
+.contain-to-grid
+  %nav.top-bar{"data-fragments"=>true}
+    .row
+      .large-3.columns.show-for-medium-up
+        %ul
+          %li.name
+            %h1
+              %a{href:'/'} TheLastCensus.com
+      .small-12.medium-12.large-6.columns
+        %section.top-bar-section.has-form
+          %ul
+            %input#tags{type:'text',placeholder:"Zip or City",maxlength:60}
+      .small-3.columns.show-for-medium-up
+        %ul.right
+          %li.name
+            %h1
+              %a Census analysis and data graphics
 %br
-
-

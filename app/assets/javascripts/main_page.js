@@ -33,4 +33,5 @@ $(document).ready(function(){
         var $search = $('#topbarSearch').val()
         if ($search.length>0){$.get("/search?data=" + $search,null,onLoadData,'json')}
     })
+
 })
