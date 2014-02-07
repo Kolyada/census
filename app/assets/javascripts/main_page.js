@@ -1,31 +1,4 @@
-var enterKeyCode = 13
-var message = function(text, type, timeout){
-    type = type || 'error'
-    timeout = timeout || 3000
-    switch  (type){
-        case 'error':
-            typeId = 'error'
-            break;
-        case 'notice':
-            typeId = 'notice'
-            break;
-        default:
-            typeId = 'default'
-    }
-    var $box = $('#'+typeId+'MessageBox')
-    $box.html(text)
-    $box.show()
-    setTimeout(function(){$box.hide()},timeout)
-}
 
-var onLoadData=function(result){
-    alert(result['status'])
-    var status = result['status']
-    if (status=='error'){message(result['errors'],status)}
-    var notice = result['notice']
-    if (notice){message(result['notice'],'notice',6000)}
-    var data = result['data']
-}
 
 $(document).ready(function(){
     $('#topbarSearch').keypress(function(e){if (e.which==enterKeyCode)$('#topbarSearchButton').click()})
@@ -33,5 +6,57 @@ $(document).ready(function(){
         var $search = $('#topbarSearch').val()
         if ($search.length>0){$.get("/search?data=" + $search,null,onLoadData,'json')}
     })
-
+    $('#clearCompareGroup').click(clearCompareGroup)
+    $('#showCompareGroupAtGmaps').click(showCompareGroupAtGmaps)
+    $('#addToCompareGroup').click(function(){
+        var ZipCode = $('#overviewZipCode').data('ZipCode')
+        if (!ZipCode){
+            message('gegrehrthhr')
+            return
+        }
+        var obj = findSelected(ZipCode)
+        addToCompareGroup(obj)
+    })
+    $( "#tags" ).autocomplete({
+        delay: 500,
+        minLength: 3,
+        source: function(request,response){
+            var $search = request.term
+            $.get("/search?type=shortdata&data=" + $search,null,function(result){
+                var status = result['status']
+                if (status=='error'){
+                    message(result['errors'],status)
+                    return
+                }
+                var notice = result['notice']
+                if (notice){message(result['notice'],'notice',6000)}
+                var data = result['data']
+                if (data.length>0){
+                    document.AutocompleteLastResult = data
+                    var showList = data.map(function(obj){
+                        var showString=titleString(obj)
+                        return showString
+                    })
+                    response(showList)
+                }
+            },'json')
+        },
+        select: function(event,ui){
+            var ZipCode = parseInt(ui.item.label)
+            var obj = findSelected(ZipCode)
+            var StateFullName = obj.StateFullName
+            var StateAbbreviation = obj.StateAbbreviation
+            var County = obj.County
+            var CityAliases = obj.CityAbbreviation.join(',')
+            var City = obj.City
+            zipcodeOverviewFill({
+                'ZipCode':ZipCode,
+                'StateFullName':StateFullName,
+                'StateAbbreviation':StateAbbreviation,
+                'County':County,
+                'CityAliases':CityAliases,
+                'City':City
+            })
+        }
+    });
 })

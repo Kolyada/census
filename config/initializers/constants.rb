@@ -1,4 +1,5 @@
 FullDataType = 'fulldata'
+ShortDataType = 'shortdata'
 FullDataSearchLimit = 5
 DataSearchLimit = 50
 SqlShortSearch = %Q[select z."ZipCode", z."Longitude", z."Latitude", z."County"

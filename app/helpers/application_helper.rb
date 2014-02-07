@@ -67,6 +67,10 @@ module ApplicationHelper
     result
   end
 
+  def likeAZip?(zip)
+    (1..99999).include?(zip.to_i)
+  end
+
   def compactResult(input)
     output={}
     input.each_pair{|k,v| output[k]=v unless v.blank?}

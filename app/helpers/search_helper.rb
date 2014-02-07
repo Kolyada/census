@@ -12,13 +12,12 @@ module SearchHelper
   end
 
   def shortSearchByZip(zipdata)
-    result ||= {}
+    result = {'CityAbbreviation'=>[]}
     zip = zipdata.to_i
-    return jsonResult(error:I18n.t("errors.longZip")) unless (1..99999).include?(zip)
+    return jsonResult(error:I18n.t("errors.longZip")) unless likeAZip?(zip)
     sql = SqlShortSearch + %Q[where z."ZipCode"=#{zip}]
     cur = ActiveRecord::Base.connection.execute(sql)
     return jsonResult(error:I18n.t("errors.noZip")) unless cur.any?
-    result['CityAbbreviation'] = []
     cur.each do |obj|
       obj.each_pair{|k,v| result[k]=v unless (k=='CityAbbreviation'  || v.blank?)}
       result['CityAbbreviation'] << obj['CityAbbreviation'] unless obj['CityAbbreviation'].blank?
@@ -48,7 +47,7 @@ module SearchHelper
       end
     end
     result << row
-    output = jsonResult(status:'success',data:[result])
+    output = jsonResult(status:'success',data:result)
     output[:notice] = I18n.t("messages.tooLong") if (cur.count == DataSearchLimit)
     output
   end
