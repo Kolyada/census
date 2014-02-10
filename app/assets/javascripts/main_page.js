@@ -34,6 +34,7 @@ $(document).ready(function(){
         minLength: 3,
         source: function(request,response){
             var $search = request.term
+            console.log('request')
             $.get("/search?type=shortdata&data=" + $search,null,function(result){
                 var status = result['status']
                 if (status=='error'){

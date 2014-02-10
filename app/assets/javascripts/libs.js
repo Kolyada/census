@@ -85,6 +85,7 @@ var showCompareGroupAtGmaps = function(){
     markers.length = 0
     markersContent.length = 0
     var bounds = new google.maps.LatLngBounds();
+    var infoWindow = new google.maps.InfoWindow()
     for (var i=0;i<objects.length;i++){
         var obj = $(objects[i])
         var lat = parseFloat(obj.data('lat'))
@@ -92,11 +93,11 @@ var showCompareGroupAtGmaps = function(){
         var title = String(obj.data('zip'))
         var LatLng = new google.maps.LatLng(lat,lng);
         var marker = new google.maps.Marker({position: LatLng,title:title,map:map});
+        marker.i = i
         markers.push(marker)
         markersContent.push(obj.data('title'))
-        var infoWindow = new google.maps.InfoWindow()
         google.maps.event.addListener(marker, 'click', function(){
-            var titleContent = markersContent[i]
+            var titleContent = markersContent[this.i]
             infoWindow.setContent(titleContent)
             infoWindow.open(map, this);
         });
