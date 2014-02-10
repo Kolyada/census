@@ -32,7 +32,6 @@ var findSelected = function(ZipCode){
     return document.AutocompleteLastResult.filter(function(x){return parseInt(x.ZipCode)==ZipCode})[0]
 }
 
-
 var zipcodeOverviewFill = function(options){
     var $overviewBlock = $('#overviewBlock')
     options = options || {}
@@ -60,7 +59,8 @@ var addToCompareGroup = function(obj){
     var ZipCode = obj['ZipCode']
     var $compareGroup = $('#compareGroup')
     var $newElem = $('<div class="alert-box" data-alert data-lat='+obj['Latitude']+' data-lng='+
-        obj['Longitude']+' data-zip='+obj['ZipCode']+'>'+titleString(obj)+clsBtn+'</div>')
+        obj['Longitude']+' data-zip='+obj['ZipCode']+' data-title="'+titleString(obj)+'">'+titleString(obj)+
+        clsBtn+'</div>')
     if (alwaysInGroup(ZipCode)){
         message('ZipCode always in compare group','notice',5000)
         return
@@ -75,27 +75,32 @@ var addToCompareGroup = function(obj){
 
 var showCompareGroupAtGmaps = function(){
     var objects = $('#compareGroup .alert-box')
-    var data = []
     if (objects.length==0){
         message('Compare group is empty')
         return
     }
+    markers.map(function(m){
+        m.setMap(null)
+    })
+    markers.length = 0
+    markersContent.length = 0
+    var bounds = new google.maps.LatLngBounds();
     for (var i=0;i<objects.length;i++){
-        data.push({
-            ZipCode:$(objects[i]).data('zip'),
-            Title:$(objects[i]).html(),
-            Latitude:$(objects[i]).data('lat'),
-            Longitude:$(objects[i]).data('lng')
-        })
+        var obj = $(objects[i])
+        var lat = parseFloat(obj.data('lat'))
+        var lng = parseFloat(obj.data('lng'))
+        var title = String(obj.data('zip'))
+        var LatLng = new google.maps.LatLng(lat,lng);
+        var marker = new google.maps.Marker({position: LatLng,title:title,map:map});
+        markers.push(marker)
+        markersContent.push(obj.data('title'))
+        var infoWindow = new google.maps.InfoWindow()
+        google.maps.event.addListener(marker, 'click', function(){
+            var titleContent = markersContent[i]
+            infoWindow.setContent(titleContent)
+            infoWindow.open(map, this);
+        });
+        bounds.extend(marker.position);
     }
-    var latlng = new google.maps.LatLng(objects[0].Latitude,objects[0].Longitude);
-    var myOptions = {zoom: 15, center: latlng, mapTypeId: google.maps.MapTypeId.ROADMAP}
-    var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
-    var latlngbounds = new google.maps.LatLngBounds();
-    for (var i = 0; i < data.length; i++) {
-        var myLatLng = new google.maps.LatLng(data[i]['Latitude'], data[i]['Longitude']);
-        latlngbounds.extend(myLatLng);
-        var marker = new google.maps.Marker({position: myLatLng,map: map,title: data[i]['Title']});
-    }
-    map.setCenter(latlngbounds.getCenter(), map.fitBounds(latlngbounds));
+    map.fitBounds(bounds);
 }

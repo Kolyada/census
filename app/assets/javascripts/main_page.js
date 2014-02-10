@@ -1,17 +1,29 @@
+var markers = []
+var markersContent = []
+var map
+function initialize() {
+    var bounds = new google.maps.LatLngBounds();
+    map = new google.maps.Map(document.getElementById('map'));
+}
 
+google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function(){
+    $('#GoogleMapsDetails').on('opened',function(){
+        google.maps.event.trigger(map, 'resize')
+        showCompareGroupAtGmaps()
+    })
     $('#topbarSearch').keypress(function(e){if (e.which==enterKeyCode)$('#topbarSearchButton').click()})
     $('#topbarSearchButton').click(function(){
         var $search = $('#topbarSearch').val()
         if ($search.length>0){$.get("/search?data=" + $search,null,onLoadData,'json')}
     })
     $('#clearCompareGroup').click(clearCompareGroup)
-    $('#showCompareGroupAtGmaps').click(showCompareGroupAtGmaps)
+
     $('#addToCompareGroup').click(function(){
         var ZipCode = $('#overviewZipCode').data('ZipCode')
         if (!ZipCode){
-            message('gegrehrthhr')
+            message('error during process, reload page')
             return
         }
         var obj = findSelected(ZipCode)
