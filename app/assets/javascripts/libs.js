@@ -55,6 +55,46 @@ var clearCompareGroup = function(){
     $("#compareGroup").hide()
 }
 
+var compareNearest = function(){
+    var ZipCode = $('#overviewZipCode').data('ZipCode')
+    if (!ZipCode){
+        message('error during process, reload page')
+        return
+    }
+    $.get("/search?type=neardata&data=" + String(ZipCode),null,function(result){
+        var status = result['status']
+        if (status=='error'){
+            message(result['errors'],status)
+            return
+        }
+        var notice = result['notice']
+        if (notice){message(result['notice'],'notice',6000)}
+        var data = result['data']
+        clearCompareGroup()
+        data.map(function(d){addToCompareGroup(d)})
+    },'json')
+}
+
+var compareRandom = function(){
+    var ZipCode = $('#overviewZipCode').data('ZipCode')
+    if (!ZipCode){
+        message('error during process, reload page')
+        return
+    }
+    $.get("/search?type=randdata&data=" + String(ZipCode),null,function(result){
+        var status = result['status']
+        if (status=='error'){
+            message(result['errors'],status)
+            return
+        }
+        var notice = result['notice']
+        if (notice){message(result['notice'],'notice',6000)}
+        var data = result['data']
+        clearCompareGroup()
+        data.map(function(d){addToCompareGroup(d)})
+    },'json')
+}
+
 var addToCompareGroup = function(obj){
     var ZipCode = obj['ZipCode']
     var $compareGroup = $('#compareGroup')

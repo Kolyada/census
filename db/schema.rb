@@ -13,10 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140205222319) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-  enable_extension "adminpack"
-
   create_table "cbsas", primary_key: "CBSA", force: true do |t|
     t.string  "CBSAName"
     t.integer "CBSADivision"
@@ -410,6 +406,7 @@ ActiveRecord::Schema.define(version: 20140205222319) do
   add_index "zip_codes", ["County"], name: "index_zip_codes_on_County", using: :btree
   add_index "zip_codes", ["Latitude"], name: "index_zip_codes_on_Latitude", using: :btree
   add_index "zip_codes", ["Longitude"], name: "index_zip_codes_on_Longitude", using: :btree
+  add_index "zip_codes", ["cbsa_id"], name: "index_zip_codes_on_cbsa_id", using: :btree
   add_index "zip_codes", ["state_id"], name: "index_zip_codes_on_state_id", using: :btree
 
 end

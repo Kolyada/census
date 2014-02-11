@@ -19,6 +19,8 @@ $(document).ready(function(){
         if ($search.length>0){$.get("/search?data=" + $search,null,onLoadData,'json')}
     })
     $('#clearCompareGroup').click(clearCompareGroup)
+    $('#compareNearest').click(compareNearest)
+    $('#compareRandom').click(compareRandom)
 
     $('#addToCompareGroup').click(function(){
         var ZipCode = $('#overviewZipCode').data('ZipCode')
@@ -34,7 +36,6 @@ $(document).ready(function(){
         minLength: 3,
         source: function(request,response){
             var $search = request.term
-            console.log('request')
             $.get("/search?type=shortdata&data=" + $search,null,function(result){
                 var status = result['status']
                 if (status=='error'){

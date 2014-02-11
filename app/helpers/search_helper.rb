@@ -11,6 +11,20 @@ module SearchHelper
     output
   end
 
+  def shortDataSearch(zipdata,type)
+    zip = zipdata.to_i
+    return jsonResult(error:I18n.t("errors.longZip")) unless likeAZip?(zip)
+    sql = SqlShortSearch + %Q[where z."ZipCode"=#{zip}]
+    cur = ActiveRecord::Base.connection.execute(sql)
+    return jsonResult(error:I18n.t("errors.noZip")) unless cur.any?
+    zipCode = cur[0]
+    sql = ((type==RandomDataType) ? compareRandomSql(zipCode['ZipCode']) : compareNearestSql(zipCode['ZipCode']))
+    cur = ActiveRecord::Base.connection.execute(sql)
+    return jsonResult(error:I18n.t("errors.noCity")) unless cur.any?
+    makeShortData(cur)
+  end
+
+
   def shortSearchByZip(zipdata)
     result = {'CityAbbreviation'=>[]}
     zip = zipdata.to_i
@@ -36,20 +50,7 @@ module SearchHelper
         order by z."ZipCode" limit #{DataSearchLimit}]
     cur = ActiveRecord::Base.connection.execute(sql)
     return jsonResult(error:I18n.t("errors.noCity")) unless cur.any?
-    result = []
-    row = {}
-    cur.each do |obj|
-      if row['ZipCode'] == obj['ZipCode']
-        row = makeRow(obj,row)
-      else
-        result << row unless row.blank?
-        row = makeRow(obj)
-      end
-    end
-    result << row
-    output = jsonResult(status:'success',data:result)
-    output[:notice] = I18n.t("messages.tooLong") if (cur.count == DataSearchLimit)
-    output
+    makeShortData(cur)
   end
 
   def allowCitySearchString(data)

@@ -1,6 +1,9 @@
 FullDataType = 'fulldata'
 ShortDataType = 'shortdata'
+NearestDataType = 'neardata'
+RandomDataType = 'randdata'
 FullDataSearchLimit = 5
+CompareLimit = 5
 DataSearchLimit = 50
 SqlShortSearch = %Q[select z."ZipCode", z."Longitude", z."Latitude", z."County"
   ,s."StateFullName",s."StateAbbreviation",c."CBSAName",c."CBSAStatisticType"

@@ -10,8 +10,10 @@ include SearchHelper
       else
         render(json:shortSearchByCity(data)) && return
       end
+    elsif [NearestDataType,RandomDataType].include?(type)
+      render(json:shortDataSearch(data,type)) && return
     else
-    render json:nothing
+    render json:{} && return
     end
   end
 end

@@ -51,7 +51,7 @@ module ApplicationHelper
 
   def jsonResult(options)
     result = {errors:[],notices:[]}
-    result[:data] = options[:data]
+    result[:data] = options[:data] || []
     result[:status] = options[:status] || 'error'
     result[:errors] << options[:error]  if options.include?(:error)
     result[:notices] << options[:notice] if options.include?(:notice)
@@ -92,6 +92,35 @@ module ApplicationHelper
     colToSelect.sub!(%Q["cbsa_id"],%Q[case d."CBSA" when '' then 0 else cast(d."CBSA" as integer) end])
     sql = %Q[insert into zip_codes (#{colToInsert}) select distinct #{colToSelect} from loaded_data d]
     ActiveRecord::Base.connection.execute(sql)
+  end
+
+  def compareNearestSql(zipCode)
+    SqlShortSearch + %Q[ where z."ZipCode" in ]+
+        %Q[(select "ZipCode" from zip_codes ]+
+        %Q[ order by ("Longitude"-(#{zipCode['Longitude']}))^2+("Latitude"-(#{zipCode['Latitude']}))^2]+
+        %Q[ limit #{CompareLimit})]
+  end
+
+  def compareRandomSql(zipCode)
+    %Q[(#{SqlShortSearch} where "ZipCode"=#{zipCode}) union (#{SqlShortSearch} where "ZipCode"!=#{zipCode} order by random() limit #{CompareLimit-1}) order by 1]
+  end
+
+
+  def makeShortData(cur)
+    result = []
+    row = {}
+    cur.each do |obj|
+      if row['ZipCode'] == obj['ZipCode']
+        row = makeRow(obj,row)
+      else
+        result << row unless row.blank?
+        row = makeRow(obj)
+      end
+    end
+    result << row
+    output = jsonResult(status:'success',data:result)
+    output[:notice] = I18n.t("messages.tooLong") if (cur.count == DataSearchLimit)
+    output
   end
 end
 

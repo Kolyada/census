@@ -7,5 +7,6 @@ class Indexes < ActiveRecord::Migration
     add_index :zip_codes, :Longitude
     add_index :zip_codes, :Latitude
     add_index :zip_codes, :state_id
+    add_index :zip_codes, :cbsa_id
   end
 end
