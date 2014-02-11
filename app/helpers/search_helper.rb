@@ -18,7 +18,7 @@ module SearchHelper
     cur = ActiveRecord::Base.connection.execute(sql)
     return jsonResult(error:I18n.t("errors.noZip")) unless cur.any?
     zipCode = cur[0]
-    sql = ((type==RandomDataType) ? compareRandomSql(zipCode['ZipCode']) : compareNearestSql(zipCode['ZipCode']))
+    sql = ((type==RandomDataType) ? compareRandomSql(zipCode) : compareNearestSql(zipCode))
     cur = ActiveRecord::Base.connection.execute(sql)
     return jsonResult(error:I18n.t("errors.noCity")) unless cur.any?
     makeShortData(cur)

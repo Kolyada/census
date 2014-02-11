@@ -102,7 +102,7 @@ module ApplicationHelper
   end
 
   def compareRandomSql(zipCode)
-    %Q[(#{SqlShortSearch} where "ZipCode"=#{zipCode}) union (#{SqlShortSearch} where "ZipCode"!=#{zipCode} order by random() limit #{CompareLimit-1}) order by 1]
+    %Q[(#{SqlShortSearch} where "ZipCode"=#{zipCode['ZipCode']}) union (#{SqlShortSearch} where "ZipCode"!=#{zipCode['ZipCode']} order by random() limit #{CompareLimit-1}) order by 1]
   end
 
 

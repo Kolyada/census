@@ -11,6 +11,5 @@ gem 'jbuilder', '~> 1.2'
 gem 'zurb-foundation'
 gem 'haml-rails'
 gem 'i18n'
-gem 'geokit-rails'
 
 gem 'rails_12factor', group: :production
